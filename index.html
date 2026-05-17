@@ -221,7 +221,7 @@
       if (currentModel === 'gpt-image-1') {
         body = { model: 'gpt-image-1', prompt, n: 1, size: '1024x1024', quality: 'high' };
       } else {
-        body = { model: 'dall-e-3', prompt, n: 1, size: '1792x1024', quality: 'hd', response_format: 'url' };
+        body = { model: 'dall-e-3', prompt, n: 1, size: '1792x1024', quality: 'hd' };
       }
 
       const res = await fetch('https://api.openai.com/v1/images/generations', {
